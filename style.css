@@ -1,0 +1,77 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Outfit, sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: clamp(320px, 40vw + 1rem, 400px);
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+}
+
+article.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.card-body img {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+}
+
+article.card-footer {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    /* max-width: 23ch; */
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+}
+
+.card-footer h1 {
+    font-size: clamp(1rem, 2vw + .01rem, 1.5rem);
+    min-width: 23ch;
+    max-width: 23ch;
+    letter-spacing: .2px;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.card-footer p {
+    font-size: clamp(.85rem, 1.4vw + .1rem, 1.15rem);
+    min-width: 30ch;
+    max-width: 31ch;
+    font-weight: 400;
+    color: #555;
+
+}
